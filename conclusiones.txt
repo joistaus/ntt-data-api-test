@@ -9,6 +9,11 @@ de código adicional en otro archivo. Esto permite enfocarse únicamente en los
 escenarios de prueba, reduciendo la cantidad de código a mantener y simplificando
 la estructura del proyecto.
 
+Adicionalmente, la suite quedó organizada para que cada escenario prepare su propio
+estado y no dependa de la ejecución previa de otro. Esto permite ejecutar los casos
+de forma aislada y, si en el futuro se requiere, también en paralelo sin afectar
+la eficacia ni la confiabilidad de las pruebas.
+
 
 MEJORAS FUTURAS
 ---------------
