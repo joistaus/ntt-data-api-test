@@ -1,0 +1,7 @@
+{
+	"name": "Togo",
+	"status": "available",
+	"photoUrls": ["https://images.dog.ceo/breeds/mastiff-english/2.jpg"],
+	"category": { "id": 1, "name": "Dogs" },
+	"tags": [{ "id": 1, "name": "friendly" }]
+}
