@@ -1,0 +1,23 @@
+CONCLUSIONES
+============
+
+A diferencia de un stack tradicional como Cucumber + herramienta para consumo de APIs,
+donde los steps definidos en el archivo .feature requieren una implementación separada en otro
+lenguaje de programación, Karate elimina esa separación. Los pasos HTTP, las validaciones
+y la lógica del test se escriben directamente en el archivo .feature, sin necesidad
+de código adicional en otro archivo. Esto permite enfocarse únicamente en los
+escenarios de prueba, reduciendo la cantidad de código a mantener y simplificando
+la estructura del proyecto.
+
+
+MEJORAS FUTURAS
+---------------
+
+1. Agregar escenarios negativos: crear una mascota con datos inválidos, consultar
+   un ID inexistente, actualizar con status no permitido, entre otros.
+
+2. Parametrizar los datos de prueba con Scenario Outline para cubrir múltiples
+   combinaciones de nombre, categoría y estado en una sola definición de escenario.
+
+3. Externalizar el entorno base (baseUrl) en perfiles de Maven para permitir
+   ejecución contra distintos ambientes sin modificar el código.
