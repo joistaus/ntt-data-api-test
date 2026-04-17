@@ -32,3 +32,13 @@ Feature: Pet API operations
     And match response.id     == setup.petId
     And match response.name   == updateBody.name
     And match response.status == updateBody.status
+
+  Scenario: Search pet by status sold
+    * def setup      = karate.callSingle('classpath:petstore/pet/pet-setup.feature')
+    * def updateBody = read('data/update-pet.json')
+    Given path '/pet/findByStatus'
+    And param status = updateBody.status
+    When method GET
+    Then status 200
+    And match response == '#[] #present'
+    And match response[*].id contains setup.petId
