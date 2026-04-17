@@ -4,11 +4,6 @@ function fn() {
         commonHeaders: {
             'Content-Type': 'application/json',
             'Accept': 'application/json'
-        },
-        petStatus: {
-            available: 'available',
-            pending: 'pending',
-            sold: 'sold'
         }
     };
     karate.configure('connectTimeout', 10000);
