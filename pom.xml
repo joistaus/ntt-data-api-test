@@ -74,7 +74,7 @@
                         </goals>
                         <configuration>
                             <projectName>ntt-data-api-test</projectName>
-                            <outputDirectory>${project.build.directory}/cucumber-html-reports</outputDirectory>
+                            <outputDirectory>${project.build.directory}</outputDirectory>
                             <inputDirectory>${project.build.directory}/karate-reports</inputDirectory>
                             <jsonFiles>
                                 <param>petstore*.json</param>
