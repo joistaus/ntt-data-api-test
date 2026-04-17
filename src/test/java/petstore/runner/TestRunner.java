@@ -8,7 +8,7 @@ import static org.junit.Assert.assertEquals;
 public class TestRunner {
     @Test
     public void testAll() {
-        Results results = Runner.path("classpath:petstore/pet")
+        Results results = Runner.path("classpath:petstore/pet/pet.feature")
                 .outputCucumberJson(true)
                 .parallel(1);
         assertEquals(0, results.getFailCount());
